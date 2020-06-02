@@ -6,7 +6,7 @@
 #    By: lafontai <lafontai@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/03/23 09:39:28 by lafontai          #+#    #+#              #
-#    Updated: 2020/05/29 08:31:33 by lafontai         ###   ########.fr        #
+#    Updated: 2020/06/02 15:27:43 by lafontai         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,6 +35,10 @@ clean:
 
 fclean:		clean
 			$(RM) $(NAME)
+
+tclean:		fclean
+			$(RM) a.out
+			$(RM) tests
 
 re:			fclean all
 
